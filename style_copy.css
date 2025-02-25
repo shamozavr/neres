@@ -113,6 +113,10 @@
   background-image: url(https://cdn-icons-png.flaticon.com/512/3035/3035476.png);
 }
 
+.list__link--nspk {
+  background-image: url(https://raw.githubusercontent.com/shamozavr/neres/refs/heads/main/assets/img/nspk_logo.png);
+}
+
 .list__link--accounting {
   background-image: url(https://cdn-icons-png.flaticon.com/512/1570/1570998.png);
 }
