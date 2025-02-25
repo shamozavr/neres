@@ -1,0 +1,221 @@
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  padding: 30px;
+  width: fit-content;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__header {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 30px;
+  justify-content: start;
+}
+
+.list--boarding {
+  padding-top: 0;
+}
+
+.list--utils {
+  flex-direction: column;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 2px 0 rgba(0, 0, 0, 0.05),
+    0 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.list__item {
+  min-height: 150px;
+  width: 300px;
+}
+
+.list__link {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100px;
+
+  text-decoration: none;
+}
+
+.list__link:visited {
+  color: #000;
+}
+
+.list__link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+}
+
+.list__link--boarding {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/473/473161.png);
+}
+
+.list__link--risks {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/2183/2183424.png);
+}
+
+.list__link--kyc {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/1465/1465419.png);
+}
+
+.list__link--cur-schemes {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/6109/6109875.png);
+}
+
+.list__link--banks {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/2830/2830284.png);
+}
+
+.list__link--crmcard {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/4151/4151298.png);
+}
+
+.list__link--refresh {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/3043/3043578.png);
+}
+
+.list__link--details-change {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/302/302440.png);
+}
+
+.list__link--returns {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/11264/11264778.png);
+}
+
+.list__link--self-employed {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/3035/3035476.png);
+}
+
+.list__link--accounting {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/1570/1570998.png);
+}
+
+.list__link--law {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/4252/4252299.png);
+}
+
+.list__link--faq {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/4403/4403555.png);
+}
+
+.list__link--portals {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/8033/8033960.png);
+}
+
+.list__link--lk {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/1728/1728902.png);
+}
+
+.list__link--test {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/12680/12680888.png);
+}
+
+.list__link--pain {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/1497/1497115.png);
+}
+
+.list__link--leader {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/1478/1478909.png);
+}
+
+.list__wrapper {
+  padding: 14px 100px 10px 36px;
+}
+
+.list__header {
+  font-size: 15px;
+}
+
+.list__text {
+  font-size: 14px;
+  color: #000;
+}
+
+.list__span--copy {
+  transition: 0.3s;
+  cursor: copy;
+  -webkit-user-select: text;
+  -moz-select: text;
+  -ms-select: text;
+  user-select: text;
+}
+
+.list__span:hover {
+  color: white;
+  background-color: black;
+}
+
+.list__span:active {
+  transition: 0s;
+  color: black;
+  background-color: grey;
+}
+
+.meme {
+  display: flex;
+  justify-content: center;
+}
+
+.meme__image {
+  width: 360px;
+  position: cover;
+}
+
+@media (max-width: 1400px) {
+  div.cell.normal:has(> div.main) {
+    padding: 0;
+  }
+
+  #main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .list {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .list__item {
+    width: 250px;
+  }
+
+  .meme__image {
+    width: 290px;
+  }
+
+  .list--boarding {
+    padding-top: 0;
+  }
+}
